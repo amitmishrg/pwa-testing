@@ -1,6 +1,4 @@
-// ./tools/precache.js
-
-const name = 'PWA-v1';
+const name = 'scotchPWA-v6'
 module.exports = {
   staticFileGlobs: [
     './index.html',
@@ -10,14 +8,14 @@ module.exports = {
     './css/*.css',
     'https://fonts.googleapis.com/icon?family=Material+Icons'
   ],
-  stripPrefix: '.',
+  stripPrefix: './',
   runtimeCaching: [{
-   urlPattern: /https:\/\/api\.github\.com\/search\/repositories/,
-   handler: 'networkFirst',
-   options: {
-     cache: {
-       name: name
-     }
-   }
- }]
+    urlPattern: /https:\/\/api\.github\.com\/search\/repositories/,
+    handler: 'networkFirst',
+    options: {
+      cache: {
+        name: name
+      }
+    }
+  }]
 };
