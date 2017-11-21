@@ -42,7 +42,7 @@ const dates = {
   }
 
   app.getTrends = function() {
-    const networkReturned = false;
+    let networkReturned = false;
     if ('caches' in window) {
       caches.match(app.apiURL).then(function(response) {
         if (response) {

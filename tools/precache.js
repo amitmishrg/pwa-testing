@@ -1,6 +1,6 @@
 // ./tools/precache.js
 
-const name = 'scotchPWA-v3';
+const name = 'PWA-v1';
 module.exports = {
   staticFileGlobs: [
     './index.html',

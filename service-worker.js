@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/css/app.css","f119d0f4fcc67330fe7ce30f1388e4d6"],["/css/materialize.css","a493a025029b0a4e35b914f9f68a08a8"],["/css/materialize.min.css","df8ee5622d9d736da06a6b0e7afdef55"],["/fonts/roboto/Roboto-Bold.woff","eed9aab5449cc9c8430d7d258108f602"],["/fonts/roboto/Roboto-Bold.woff2","c0f1e4a4fdfb8048c72e86aadb2a247d"],["/fonts/roboto/Roboto-Light.woff","ea36cd9a0e9eee97012a67b8a4570d7b"],["/fonts/roboto/Roboto-Light.woff2","3c37aa69cd77e6a53a067170fa8fe2e9"],["/fonts/roboto/Roboto-Medium.woff","cf4d60bc0b1d4b2314085919a00e1724"],["/fonts/roboto/Roboto-Medium.woff2","1561b424aaef2f704bbd89155b3ce514"],["/fonts/roboto/Roboto-Regular.woff","3cf6adf61054c328b1b0ddcd8f9ce24d"],["/fonts/roboto/Roboto-Regular.woff2","5136cbe62a63604402f2fedb97f246f8"],["/fonts/roboto/Roboto-Thin.woff","44b78f142603eb69f593ed4002ed7a4a"],["/fonts/roboto/Roboto-Thin.woff2","1f35e6a11d27d2e10d28946d42332dc5"],["/index.html","0f3f5226e6ec8133b6d4a05c306e5890"],["/js/app.js","6a6e8c413caeaec86df9da2d3d846e5c"],["/js/jquery-2.1.1.js","7403060950f4a13be3b3dfde0490ee05"],["/js/materialize.js","e97da5c8b60e6673b98b286c2acf437d"],["/js/materialize.min.js","72604b4dd26e411dd6d7290b9f6c1d9c"]];
+var precacheConfig = [["/css/app.css","05b101facf07d33cf4587e3680aa63ec"],["/css/materialize.css","a493a025029b0a4e35b914f9f68a08a8"],["/css/materialize.min.css","df8ee5622d9d736da06a6b0e7afdef55"],["/fonts/roboto/Roboto-Bold.woff","eed9aab5449cc9c8430d7d258108f602"],["/fonts/roboto/Roboto-Bold.woff2","c0f1e4a4fdfb8048c72e86aadb2a247d"],["/fonts/roboto/Roboto-Light.woff","ea36cd9a0e9eee97012a67b8a4570d7b"],["/fonts/roboto/Roboto-Light.woff2","3c37aa69cd77e6a53a067170fa8fe2e9"],["/fonts/roboto/Roboto-Medium.woff","cf4d60bc0b1d4b2314085919a00e1724"],["/fonts/roboto/Roboto-Medium.woff2","1561b424aaef2f704bbd89155b3ce514"],["/fonts/roboto/Roboto-Regular.woff","3cf6adf61054c328b1b0ddcd8f9ce24d"],["/fonts/roboto/Roboto-Regular.woff2","5136cbe62a63604402f2fedb97f246f8"],["/fonts/roboto/Roboto-Thin.woff","44b78f142603eb69f593ed4002ed7a4a"],["/fonts/roboto/Roboto-Thin.woff2","1f35e6a11d27d2e10d28946d42332dc5"],["/index.html","2a080145e7ee2d1440b8aa60cf746713"],["/js/app.js","7496e404c90ad064a0eddfe86dc9901b"],["/js/jquery-2.1.1.js","7403060950f4a13be3b3dfde0490ee05"],["/js/materialize.js","e97da5c8b60e6673b98b286c2acf437d"],["/js/materialize.min.js","72604b4dd26e411dd6d7290b9f6c1d9c"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"scotchPWA-v3"}});
+toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"PWA-v1"}});
 
 
 
