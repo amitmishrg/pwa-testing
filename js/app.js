@@ -79,7 +79,7 @@ const dates = {
   });
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('.././service-worker.js')
+    navigator.serviceWorker.register('/pwa-testing/service-worker.js')
     .then(function() {
       console.log('Service Worker Registered');
     });
